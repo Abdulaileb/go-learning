@@ -1,4 +1,4 @@
-package main
+package basics
 
 import (
 	"fmt"
@@ -19,11 +19,11 @@ func (s Severity) String() string {
 	return [...]string{"INFO", "LOW", "MEDIUM", "HIGH", "CRITICAL"}[s]
 }
 
-const s string = "constant"
+const Constants string = "constant"
 
-func con() {
+func ConstantsDemo() {
 
-	fmt.Println(s)
+	fmt.Println(Constants)
 
 	const n = 500000000000
 
@@ -34,15 +34,9 @@ func con() {
 
 	fmt.Println(math.Sin(n))
 
-	const maximumRetires = 45
+	const maximumRetries = 45
 	const serviceName = "api-key"
 	const lazyLoad = true
+	fmt.Println(maximumRetries, serviceName, lazyLoad)
 
-}
-
-func main() {
-	con()
-	fmt.Println(Severity(High))
-	fmt.Println(Severity(Critical))
-	fmt.Printf("%d\n", Severity(Meduim))
 }

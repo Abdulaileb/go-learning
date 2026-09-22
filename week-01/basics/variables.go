@@ -1,4 +1,4 @@
-package main
+package basics
 
 import (
 	"fmt"
@@ -6,7 +6,13 @@ import (
 
 // In golang, strings are concatenated
 
-func variablesDemo() {
+var (
+	name      string
+	age       int
+	isStudent bool
+)
+
+func VariablesDemo() {
 	fmt.Println("go " + "lang")
 
 	var myname string
@@ -23,7 +29,7 @@ func variablesDemo() {
 	// variablesDemo() // Commented out to prevent infinite recursion
 }
 
-func variablesDemo2() {
+func VariablesDemo2() {
 	var mygoals string
 	mygoals = "to become successful in this world and the next"
 
@@ -54,4 +60,14 @@ func variablesDemo2() {
 
 	// dates
 
+}
+
+func GroupingVariableDemo() {
+	name = "John"
+	age = 30
+	isStudent = true
+
+	fmt.Println("Name:", name)
+	fmt.Println("Age:", age)
+	fmt.Println("Is Student:", isStudent)
 }
