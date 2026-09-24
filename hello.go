@@ -1,8 +1,10 @@
 package main
 
 import (
-	"example.com/go-learning/week-01/basics"
 	"fmt"
+
+	"example.com/go-learning/week-01/basics"
+	"example.com/go-learning/week-01/project"
 
 	"rsc.io/quote"
 )
@@ -16,4 +18,7 @@ func main() {
 	basics.VariablesDemo()
 	basics.VariablesDemo2()
 	basics.GroupingVariableDemo()
+	fmt.Println(project.TestPasswordVerification())
+	project.SecurityPolicyMapping()
+	project.DisplayResult9()
 }
